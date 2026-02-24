@@ -1,0 +1,134 @@
+site_name: Aprende Rust
+site_description: "De Python a Rust: Guía completa para desarrolladores de sistemas"
+site_author: Daniele
+site_url: https://aprende-rust.dev
+
+repo_name: aprende-rust
+repo_url: https://github.com/dettriva/aprende-rust
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  icon:
+    logo: material/language-rust
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dettriva
+  generator: false
+
+extra_css:
+  - assets/extra.css
+extra_javascript:
+  - assets/extra.js
+
+copyright: "Aprende Rust &copy; 2026 — Inspirado en aprendepython.es"
+
+nav:
+  - Inicio: index.md
+  - Plan de estudio: plan.md
+  - Bases de sistemas:
+    - Pensamiento de sistemas: capitulos/bases-1-sistemas.md
+    - De Python a compilado: capitulos/bases-2-compilado.md
+    - Herramientas y ecosistema: capitulos/bases-3-herramientas.md
+  - Fundamentos de Rust:
+    - Bienvenido a Rust: capitulos/01-bienvenido.md
+    - "Variables, tipos y propiedad": capitulos/02-variables-tipos-propiedad.md
+    - Referencias y préstamos: capitulos/03-referencias-prestamos.md
+    - Funciones y flujo de control: capitulos/04-funciones-flujo-control.md
+  - Tipos intermedios:
+    - Structs y Enums: capitulos/05-structs-enums.md
+    - Pattern Matching: capitulos/06-pattern-matching.md
+    - Traits y Genéricos: capitulos/07-traits-genericos.md
+    - Manejo de errores: capitulos/08-manejo-errores.md
+  - Avanzado:
+    - Colecciones e Iteradores: capitulos/09-colecciones-iteradores.md
+    - Módulos y Crates: capitulos/10-modulos-crates.md
+    - Lifetimes en profundidad: capitulos/11-lifetimes.md
+    - Smart Pointers: capitulos/12-smart-pointers.md
+    - Concurrencia: capitulos/13-concurrencia.md
+  - Ecosistema:
+    - Async/Await con Tokio: capitulos/14-async-tokio.md
+    - Web con Axum: capitulos/15-web-axum.md
+    - "Proyecto final: RustMenu": capitulos/16-proyecto-final.md
+  - Nivel experto:
+    - Unsafe y FFI: capitulos/17-unsafe-ffi.md
+    - Macros declarativas y procedurales: capitulos/18-macros.md
+    - Rendimiento y optimización: capitulos/19-rendimiento.md
+    - Testing avanzado y publicación: capitulos/20-testing-publicar.md
+  - Referencia rápida: referencia-rapida.md
+  - Recursos: recursos.md

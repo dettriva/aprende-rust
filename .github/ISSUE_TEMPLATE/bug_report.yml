@@ -1,0 +1,56 @@
+name: "Reporte de error"
+description: "Reportar un enlace roto, error en el codigo, problema de renderizado o contenido incorrecto"
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Tipo de error"
+      options:
+        - "Enlace roto"
+        - "Error en codigo de ejemplo"
+        - "Problema de renderizado"
+        - "Contenido incorrecto o desactualizado"
+        - "Error tipografico"
+        - "Otro"
+    validations:
+      required: true
+
+  - type: input
+    id: chapter
+    attributes:
+      label: "Capitulo afectado"
+      placeholder: "Ej: Cap 05 - Uniones discriminadas"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descripcion del error"
+      placeholder: "Describe que esta mal y donde lo encontraste"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Comportamiento esperado"
+      placeholder: "Que deberia mostrar o hacer en su lugar"
+
+  - type: input
+    id: url
+    attributes:
+      label: "URL de la pagina"
+      placeholder: "https://aprende-typescript.dev/capitulos/..."
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: "Navegador"
+      options:
+        - "Chrome"
+        - "Firefox"
+        - "Safari"
+        - "Edge"
+        - "Otro"

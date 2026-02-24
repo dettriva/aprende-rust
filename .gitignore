@@ -1,0 +1,47 @@
+# Build output
+site/
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# MkDocs
+.cache/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+
+# Backup
+*.bak
+*.orig
+*.tmp
+
+# Node (if any tooling)
+node_modules/
+
+# Logs
+*.log

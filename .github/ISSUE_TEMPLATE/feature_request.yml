@@ -1,0 +1,31 @@
+name: "Solicitud de mejora"
+description: "Sugerir nuevo contenido, ejercicios, mejoras de UX o funcionalidades"
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Tipo de mejora"
+      options:
+        - "Nuevo contenido o capitulo"
+        - "Nuevos ejercicios o quizzes"
+        - "Mejora de explicacion existente"
+        - "Mejora de UX/diseno"
+        - "Nueva funcionalidad interactiva"
+        - "Otro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descripcion de la mejora"
+      placeholder: "Describe que te gustaria ver y por que seria util"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Contexto adicional"
+      placeholder: "Capitulos relacionados, ejemplos de otras guias, etc."
